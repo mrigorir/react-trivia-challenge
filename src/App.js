@@ -1,7 +1,9 @@
+import Trivia from './components/Trivia';
+
 function App() {
   return (
     <>
-      Start!
+      <Trivia />
     </>
   );
 }
