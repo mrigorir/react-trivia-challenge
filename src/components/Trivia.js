@@ -1,52 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   Row, Col, Image, Container, ListGroup, ProgressBar,
 } from 'react-bootstrap';
-import trivia from '../questions/questions';
+import triviaHooks from '../hooks/useTriviaHooks';
 import Score from './Score';
 
 const Trivia = () => {
-  const questions = trivia.questions.length;
-  const [currentQuestion, setCurrentQuestion] = useState(0);
-  const timer = trivia.questions[currentQuestion].lifetimeSeconds;
-  const next = currentQuestion + 1;
-  const [counter, setCounter] = useState(1);
-  const [showScore, setShowScore] = useState(false);
-  const [highlight, setHighlight] = useState('');
-  const [score, setScore] = useState(0);
-  const percentage = 100 / questions;
-  const [progress, setProgress] = useState(percentage);
-  const add = () => setTimeout(() => setHighlight('bold'), timer - 1000);
-  const remove = () => setTimeout(() => setHighlight(''), timer);
-
-  const handleSelectedQuestion = (e, correct) => {
-    e.preventDefault();
-    e.target.classList.add('selected-question');
-    if (correct) {
-      setScore(score + 1);
-      e.target.classList.remove('d-none');
-    }
-  };
-
-  const temp = () => {
-    setTimeout(() => {
-      if (next < questions) {
-        setCurrentQuestion(next);
-        setProgress(progress + percentage);
-        setCounter(counter + 1);
-      }
-      if (next >= questions) setShowScore(true);
-    }, timer);
-  };
-
-  useEffect(() => {
-    add();
-    remove();
-  }, [currentQuestion]);
-
-  temp();
+  const hooks = triviaHooks();
+  const {
+    handleSelectedQuestion, showScore, highlight, trivia,
+    counter, questions, score, currentQuestion, progress,
+  } = hooks;
 
   return (
     (showScore) ? <Score score={score} questions={questions} />
