@@ -1,6 +1,6 @@
 # Trivia React Challenge
 
-> This is a 'Trivia' challenge test completed in order to apply to a technical interview to [Rather labs](https://ratherlabs.com/). The right answers are automatically marked after a certain amount of seconds, either answered by the participant or not. In the end the participant will know how many questions were correctly answered. 
+> This is a 'Trivia' challenge test completed in order to apply to a technical interview with Rather labs. The right answers are automatically marked after a certain amount of seconds, either answered by the participant or not. In the end, the participant will know how many questions were correctly answered.
 
 ## This project was built with:
 
