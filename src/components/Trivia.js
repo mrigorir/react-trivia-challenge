@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import trivia from '../questions/questions';
 import Score from './Score';
 import '../styles/styles.css';
@@ -42,6 +43,11 @@ const Trivia = () => {
     (showScore) ? <Score score={score} questions={questions} />
       : (
         <div>
+          <button type="button">
+            <Link to="/">
+              Volver
+            </Link>
+          </button>
           <p>
             {trivia.questions[currentQuestion].questionNumber}
           </p>
