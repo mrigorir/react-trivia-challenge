@@ -4,38 +4,38 @@ const trivia = {
   questions: [
     {
       questionNumber: 1,
-      questionText: '¿De que color es este cocodrilo?',
+      questionText: '¿En que país existen mas zebras?',
       questionImage:
-  'https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg',
-      lifetimeSeconds: 3000,
+  'https://live.staticflickr.com/65535/51738721907_30abaf1c8a_z.jpg',
+      lifetimeSeconds: 100000000,
       options: [
-        { text: 'Verde', correct: true },
-        { text: 'Azul', correct: false },
-        { text: 'Morado', correct: false },
+        { text: 'Africa', correct: true },
+        { text: 'Australia', correct: false },
+        { text: 'Estados Unidos', correct: false },
       ],
     },
     {
       questionNumber: 2,
-      questionText: '¿A que velociadad mueve las alas la golondrina?',
+      questionText: '¿Cual es la máxima velocidad que puede alcanzar una pantera?',
       questionImage:
-  'https://filedn.com/ltOdFv1aqz1YIFhf4gTY8D7/ingus-info/BLOGS/Photography-stocks3/stock-photography-slider.jpg',
+  'https://live.staticflickr.com/65535/51739548636_8f6bceb6a5_z.jpg',
       lifetimeSeconds: 3000,
       options: [
-        { text: '1 km/s', correct: true },
-        { text: '20km/s', correct: false },
-        { text: '990km/s', correct: false },
+        { text: '20 km/h', correct: false },
+        { text: '114km/h', correct: true },
+        { text: '990km/h', correct: false },
       ],
     },
     {
       questionNumber: 3,
-      questionText: '¿Donde viven las iguanas?',
+      questionText: '¿Cuantos años perrunos equivalen a un año humano?',
       questionImage:
-  'https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg',
+  'https://live.staticflickr.com/65535/51738744402_9d0f43dca1_n.jpg',
       lifetimeSeconds: 3000,
       options: [
-        { text: 'En el metro', correct: false },
-        { text: 'En el bosque', correct: false },
-        { text: 'En tu corazón', correct: true },
+        { text: '1 año humano / 13 años perrunos', correct: false },
+        { text: '1 año humano / 20 años perrunos', correct: false },
+        { text: '1 año humano / 7 años perrunos', correct: true },
       ],
     },
   ],

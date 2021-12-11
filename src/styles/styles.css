@@ -40,6 +40,14 @@
   transition: all ease-in-out .3s;
 }
 
+div.list.list-group-item:hover {
+  background-color: rgb(153, 153, 153)!important;
+}
+
+a.text-question:hover {
+  color: rgb(171, 219, 247); 
+}
+
 /* animations */
 
 .start-title {
@@ -74,13 +82,15 @@
   }
 }
 
+/* questions */
+
 .bold {
-  font-size: 30px;
+  font-size: 50px;
   color: lightgreen;
 }
+
 .selected-question {
-  color: rgb(0, 81, 128); 
-  font-size: 20px;
+  color: rgb(171, 219, 247); 
 }
 
 .bold,
