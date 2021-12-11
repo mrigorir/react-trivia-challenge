@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# Trivia React Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> This is a 'Trivia' challenge test completed in order to apply to a technical interview to [Rther labs](https://ratherlabs.com/). The right answers are automatically marked after a certain amount of seconds, either answered by the participant or not. In the end the participant will know how many questions were correctly answered. 
 
-## Available Scripts
+## This project was built with:
 
-In the project directory, you can run:
+ - React.
 
-### `npm start`
+ - React-boostrap.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+ - React's own Font Awesome.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+ - React-router-dom.
 
-### `npm test`
+## Image Preview
+![Screenshot Main Page]('./src/assets/images/capture.jpg');
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+To get a local copy up and running follow these simple example steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- On the project, GitHub page, navigate to the [main page of the repository](https://github.com/mrigorir/react-trivia-challenge)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Click on a button named `code`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Copy the project URL as displayed on HTTPS tab
 
-### `npm run eject`
+- If you're running Windows Operating System, open your command prompt. On Linux, Open your terminal
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Change the current working directory to the location where you want the cloned directory to be made. Leave as it is if the current location is where you want the project to be.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Type `git clone`, and then paste the URL you copied in Step 3.<br>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+  `$ git clone git@github.com:mrigorir/react-trivia-challenge` <em>Press Enter key</em><br>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Your local copy will be created.
 
-## Learn More
+- Please note that you must have Git installed on your PC, this can be done [here](https://gist.github.com/derhuerst/1b15ff4652a867391f03)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- After you get the project aiming to the desired directory, you need now to install dependencies by running npm install.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+### Github Actions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To make sure the linters' checks using Github Actions work properly, you should follow the next steps:
 
-### Analyzing the Bundle Size
+1. On your recently forked repo, enable the GitHub Actions in the Actions tab.
+   
+2. Create the `feature/branch` and push.
+   
+3. Start working on your milestone as usual.
+   
+4. Open a PR from the `feature/branch` when your work is done.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Usage 
 
-### Making a Progressive Web App
+- Make sure you have npm and node installed.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- I recommend the use of VS code as a code editor, but you can use any code editor.
 
-### Advanced Configuration
+- Run in your terminal `npm run start` OR `yarn start` to see the run the app in your default browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- You should see the todo form ready to be used.
 
-### Deployment
+- Add a name for the task owner (description is optional).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- hit create button to create your todo.
 
-### `npm run build` fails to minify
+- You can either check it when DONE or remove it by hitting the trash icon.
+## Authors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+👤 **Marco Parra**
+
+- GitHub: [@mrigorir](https://github.com/mrigorir)
+- Twitter: [@marcoparra311](https://twitter.com/marcoparra311)
+- LinkedIn: [@marco-alonso-parra](https://www.linkedin.com/in/marco-alonso-parra/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/mrigorir/react-trivia-challenge/issues).
+
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+
+## Acknowledgments
+
+This challenge has been created by 
+
+:star: [Rther labs](https://ratherlabs.com/) :star:
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.

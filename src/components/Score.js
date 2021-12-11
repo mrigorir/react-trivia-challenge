@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Row, Col, Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import {
+  Row, Col, Container,
+} from 'react-bootstrap';
 import Win from './Win';
 import Lose from './Lose';
 
@@ -23,6 +26,11 @@ const Score = ({ score, questions }) => (
     </Row>
     <div>
       {score > (questions / 2) ? <Win /> : <Lose />}
+    </div>
+    <div className="d-flex align-items-center justify-content-center mt-5">
+      <Link to="/" className="btn btn-secondary fs-4 fw-bold px-5 py-2">
+        Volver a empezar
+      </Link>
     </div>
   </Container>
 );

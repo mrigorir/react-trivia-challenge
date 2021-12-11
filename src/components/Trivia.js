@@ -70,6 +70,9 @@ const Trivia = () => {
             </Row>
             <Row className="w-75 mx-auto">
               <Col md={12} className="mb-5">
+                <h4 className="text-center text-content fw-bold mb-5">
+                  La respuesta correcta se marcará en breve...
+                </h4>
                 <h1 className="text-center text-content fw-bold mb-5">
                   Pregunta
                   <span className="ps-2">
