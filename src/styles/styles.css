@@ -1,8 +1,83 @@
+/* baase */
+
+:root {
+  --bg-body: #222;
+  --bg-content: #333;
+  --text-content: #8e8f98;
+  --text-question: #646161;
+}
+
+/* backgrounds */
+
+.bg-body {
+  background-color: var(--bg-body);
+}
+
+.bg-content {
+  background-color: var(--bg-content);
+}
+
+/* colors */
+
+.text-content {
+  color: var(--text-content);
+}
+
+.text-question {
+  color: var(--text-question);
+}
+
+/* excvlusive margins */
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+/* hovers */
+
+.begin-button:hover {
+  transform: scale(1.2, 1.2);
+  transition: all ease-in-out .3s;
+}
+
+/* animations */
+
+.start-title {
+  animation: startTitle 2s;
+}
+
+.start-image {
+  animation: startImage 2s;
+}
+
+@keyframes startTitle {
+  from {
+    opacity: 0;
+    margin-top: 200px;
+  }
+
+  to {
+    opacity: 1;
+    margin-top: 100px;
+  }
+}
+
+@keyframes startImage {
+  from {
+    opacity: 0;
+    margin-right: 500px;
+  }
+
+  to {
+    opacity: 1;
+    margin-right: 0;
+  }
+}
+
 .bold {
   font-size: 30px;
   color: lightgreen;
 }
-
 .selected-question {
   color: rgb(0, 81, 128); 
   font-size: 20px;

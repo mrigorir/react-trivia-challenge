@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { Row, Col } from 'react-bootstrap';
 import trivia from '../questions/questions';
 import Score from './Score';
-import '../styles/styles.css';
 
 const Trivia = () => {
   const [counter, setCounter] = useState(1);
@@ -42,41 +42,43 @@ const Trivia = () => {
   return (
     (showScore) ? <Score score={score} questions={questions} />
       : (
-        <div>
-          <button type="button">
-            <Link to="/">
-              Volver
-            </Link>
-          </button>
-          <p>
-            {trivia.questions[currentQuestion].questionNumber}
-          </p>
-          <img src={trivia.questions[currentQuestion].questionImage} alt="big animal" width="100" height="100" />
-          <p>
-            {trivia.questions[currentQuestion].questionText}
-          </p>
-          <p>
-            {trivia.questions[currentQuestion].options.map((option, index) => {
-              const { text, correct } = option;
-              return (
-                <a href="/" key={text} className={`${correct === true ? highlight : ''}`} onClick={(e) => handleSelectedQuestion(e, correct)}>
-                  {index + 1}
-                  . -
-                  {text}
-                  <br />
-                  <br />
-                </a>
-              );
-            })}
-          </p>
-          <h1>
-            Pregunta
-            {' '}
-            {counter}
-            {' '}
-            / 3
-          </h1>
-        </div>
+        <Row>
+          <Col md={12}>
+            <button type="button">
+              <Link to="/">
+                Volver
+              </Link>
+            </button>
+            <p>
+              {trivia.questions[currentQuestion].questionNumber}
+            </p>
+            <img src={trivia.questions[currentQuestion].questionImage} alt="big animal" width="100" height="100" />
+            <p>
+              {trivia.questions[currentQuestion].questionText}
+            </p>
+            <p>
+              {trivia.questions[currentQuestion].options.map((option, index) => {
+                const { text, correct } = option;
+                return (
+                  <a href="/" key={text} className={`${correct === true ? highlight : ''}`} onClick={(e) => handleSelectedQuestion(e, correct)}>
+                    {index + 1}
+                    . -
+                    {text}
+                    <br />
+                    <br />
+                  </a>
+                );
+              })}
+            </p>
+            <h1>
+              Pregunta
+              {' '}
+              {counter}
+              {' '}
+              / 3
+            </h1>
+          </Col>
+        </Row>
       )
   );
 };
