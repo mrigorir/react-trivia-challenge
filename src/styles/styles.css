@@ -38,7 +38,6 @@ div.list-group-item {
   margin: 10px 0;
 }
 
-
 /* hovers */
 
 .begin-button:hover {
@@ -57,17 +56,21 @@ a.text-question:hover {
 /* animations */
 
 .start-title {
-  animation: startTitle 2s;
+  animation: startTitle 1s;
 }
 
 .start-image {
-  animation: startImage 2s;
+  animation: startImage 1s;
+}
+
+.animate-lose {
+  animation: lose 1s;
 }
 
 @keyframes startTitle {
   from {
     opacity: 0;
-    margin-top: 200px;
+    margin-top: 0px;
   }
 
   to {
@@ -79,7 +82,7 @@ a.text-question:hover {
 @keyframes startImage {
   from {
     opacity: 0;
-    margin-right: 500px;
+    margin-right: 200px;
   }
 
   to {
@@ -88,21 +91,43 @@ a.text-question:hover {
   }
 }
 
+@keyframes lose {
+  from {
+    opacity: 0;
+    margin-top: 0;
+  }
+
+  to {
+    opacity: 1;
+    margin-top: 100px;
+  }
+}
+
 /* questions */
 
 .bold {
   font-size: 50px;
-  color: lightgreen!important;
+  color: rgb(83, 247, 83)!important;
 }
 
 .selected-question {
-  color: rgb(171, 219, 247); 
+  color: aqua!important;
 }
 
 .bold,
 .selected-question {
   transition: all ease-in-out .3s;
   font-weight: bold;
+}
+
+/* score */
+
+.message {
+  font-size: 20px;
+}
+
+.face-message {
+  font-size: 30px;
 }
 
 /* queries */
@@ -112,5 +137,28 @@ a.text-question:hover {
     font-size: 30px!important;
     display: block;
     padding: 30px;
+  }
+
+  .message {
+    width: 100%;
+    margin: 200px auto 0 auto;
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .message {
+    justify-content: around;
+  }
+
+  .animate-lose,
+  .message {
+    width: 80%;
+    margin: 100px auto;
+  }
+  
+  .message,
+  .face-message {
+    font-size: 40px;
   }
 }

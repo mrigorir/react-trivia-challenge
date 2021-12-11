@@ -18,10 +18,7 @@ const triviaHooks = () => {
   const handleSelectedQuestion = (e, correct) => {
     e.preventDefault();
     e.target.classList.add('selected-question');
-    if (correct) {
-      setScore(score + 1);
-      e.target.classList.remove('d-none');
-    }
+    if (correct) setScore(score + 1);
   };
 
   const temp = () => {
