@@ -7,7 +7,7 @@ const trivia = {
       questionText: '¿En que país existen mas zebras?',
       questionImage:
   'https://live.staticflickr.com/65535/51738721907_30abaf1c8a_z.jpg',
-      lifetimeSeconds: 100000000,
+      lifetimeSeconds: 5000,
       options: [
         { text: 'Africa', correct: true },
         { text: 'Australia', correct: false },
@@ -19,7 +19,7 @@ const trivia = {
       questionText: '¿Cual es la máxima velocidad que puede alcanzar una pantera?',
       questionImage:
   'https://live.staticflickr.com/65535/51739548636_8f6bceb6a5_z.jpg',
-      lifetimeSeconds: 3000,
+      lifetimeSeconds: 5000,
       options: [
         { text: '20 km/h', correct: false },
         { text: '114km/h', correct: true },
@@ -31,7 +31,7 @@ const trivia = {
       questionText: '¿Cuantos años perrunos equivalen a un año humano?',
       questionImage:
   'https://live.staticflickr.com/65535/51738744402_9d0f43dca1_n.jpg',
-      lifetimeSeconds: 3000,
+      lifetimeSeconds: 5000,
       options: [
         { text: '1 año humano / 13 años perrunos', correct: false },
         { text: '1 año humano / 20 años perrunos', correct: false },

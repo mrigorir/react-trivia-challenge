@@ -23,8 +23,9 @@
   color: var(--text-content);
 }
 
-.text-question {
+a.text-question {
   color: var(--text-question);
+  font-size: 15px!important;
 }
 
 /* excvlusive margins */
@@ -32,6 +33,11 @@
 .mt-100 {
   margin-top: 100px;
 }
+
+div.list-group-item {
+  margin: 10px 0;
+}
+
 
 /* hovers */
 
@@ -86,7 +92,7 @@ a.text-question:hover {
 
 .bold {
   font-size: 50px;
-  color: lightgreen;
+  color: lightgreen!important;
 }
 
 .selected-question {
@@ -97,4 +103,14 @@ a.text-question:hover {
 .selected-question {
   transition: all ease-in-out .3s;
   font-weight: bold;
+}
+
+/* queries */
+
+@media screen and (min-width: 768px) {
+  a.text-question {
+    font-size: 30px!important;
+    display: block;
+    padding: 30px;
+  }
 }

@@ -56,8 +56,8 @@ const Trivia = () => {
                   {trivia.questions[currentQuestion].options.map((option, index) => {
                     const { text, correct } = option;
                     return (
-                      <ListGroup.Item key={text} className="shadow-lg p-3 px-5 bg-dark list">
-                        <Link to="/" className={`${correct === true ? highlight : ''} text-question fs-2 text-decoration-none p-3 px-5 answer`} onClick={(e) => handleSelectedQuestion(e, correct)}>
+                      <ListGroup.Item key={text} className="shadow-lg p-3 bg-dark list">
+                        <Link to="/" className={`${correct === true ? highlight : ''} text-question text-decoration-none answer`} onClick={(e) => handleSelectedQuestion(e, correct)}>
                           {index + 1}
                           . -
                           {text}
@@ -68,7 +68,7 @@ const Trivia = () => {
                 </ListGroup>
               </Col>
             </Row>
-            <Row>
+            <Row className="w-75 mx-auto">
               <Col md={12} className="mb-5">
                 <h1 className="text-center text-content fw-bold mb-5">
                   Pregunta
