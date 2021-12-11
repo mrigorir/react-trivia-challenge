@@ -26,6 +26,18 @@ const trivia = {
         { text: '990km/s', correct: false },
       ],
     },
+    {
+      questionNumber: 3,
+      questionText: '¿Donde viven las iguanas?',
+      questionImage:
+  'https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg',
+      lifetimeSeconds: 1000,
+      options: [
+        { text: '1 km/s', correct: true },
+        { text: '20km/s', correct: false },
+        { text: '990km/s', correct: false },
+      ],
+    },
   ],
 };
 

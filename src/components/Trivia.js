@@ -1,21 +1,27 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import trivia from '../questions/questions';
 import Score from './Score';
 
 const Trivia = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [showScore, setShowScore] = useState(false);
   const timer = trivia.questions[currentQuestion].lifetimeSeconds;
   const questions = trivia.questions.length;
+  const next = currentQuestion + 1;
 
-  useEffect(() => {
-    const next = currentQuestion + 1;
-    setInterval(() => {
+  const temp = () => {
+    setTimeout(() => {
       if (next < questions) setCurrentQuestion(next);
+      if (next >= questions) setShowScore(true);
     }, timer);
-  }, [currentQuestion]);
+  };
+
+  temp();
+
+  console.log(questions);
 
   return (
-    (currentQuestion > questions) ? <Score />
+    (showScore) ? <Score />
       : (
         <div>
           <p>
@@ -31,7 +37,6 @@ const Trivia = () => {
               return (
                 <span key={text} data={correct.toString()}>
                   {index + 1}
-                  {' '}
                   . -
                   {text}
                   <br />
