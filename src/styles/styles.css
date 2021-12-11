@@ -1,0 +1,15 @@
+.bold {
+  font-size: 30px;
+  color: lightgreen;
+}
+
+.selected-question {
+  color: rgb(0, 81, 128); 
+  font-size: 20px;
+}
+
+.bold,
+.selected-question {
+  transition: all ease-in-out .3s;
+  font-weight: bold;
+}
