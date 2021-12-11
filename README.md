@@ -1,6 +1,6 @@
 # Trivia React Challenge
 
-> This is a 'Trivia' challenge test completed in order to apply to a technical interview to [Rther labs](https://ratherlabs.com/). The right answers are automatically marked after a certain amount of seconds, either answered by the participant or not. In the end the participant will know how many questions were correctly answered. 
+> This is a 'Trivia' challenge test completed in order to apply to a technical interview to [Rather labs](https://ratherlabs.com/). The right answers are automatically marked after a certain amount of seconds, either answered by the participant or not. In the end the participant will know how many questions were correctly answered. 
 
 ## This project was built with:
 
@@ -13,7 +13,7 @@
  - React-router-dom.
 
 ## Image Preview
-![Screenshot Main Page]('./src/assets/images/capture.jpg');
+![Screenshot Main Page](/src/assets/images/capture.jpg)
 
 ## Getting Started
 
@@ -91,7 +91,7 @@ Give a ⭐️ if you like this project!
 
 This challenge has been created by 
 
-:star: [Rther labs](https://ratherlabs.com/) :star:
+:star: [Rather labs](https://ratherlabs.com/) :star:
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
