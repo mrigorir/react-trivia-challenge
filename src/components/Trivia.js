@@ -8,15 +8,17 @@ const Trivia = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [highlight, setHighlight] = useState('');
+  const [score, setScore] = useState(0);
   const timer = trivia.questions[currentQuestion].lifetimeSeconds;
   const questions = trivia.questions.length;
   const next = currentQuestion + 1;
   const add = () => setTimeout(() => setHighlight('bold'), timer - 1000);
   const remove = () => setTimeout(() => setHighlight(''), timer);
 
-  const handleSelectedQuestion = (e) => {
+  const handleSelectedQuestion = (e, correct) => {
     e.preventDefault();
     e.target.classList.add('selected-question');
+    if (correct) setScore(score + 1);
   };
 
   const temp = () => {
@@ -37,7 +39,7 @@ const Trivia = () => {
   temp();
 
   return (
-    (showScore) ? <Score />
+    (showScore) ? <Score score={score} questions={questions} />
       : (
         <div>
           <p>
@@ -51,7 +53,7 @@ const Trivia = () => {
             {trivia.questions[currentQuestion].options.map((option, index) => {
               const { text, correct } = option;
               return (
-                <a href="/" key={text} className={`${correct === true ? highlight : ''}`} onClick={handleSelectedQuestion}>
+                <a href="/" key={text} className={`${correct === true ? highlight : ''}`} onClick={(e) => handleSelectedQuestion(e, correct)}>
                   {index + 1}
                   . -
                   {text}
