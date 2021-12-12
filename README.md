@@ -15,6 +15,8 @@
 ## Image Preview
 ![Screenshot Main Page](/src/assets/images/capture.jpg)
 
+## :star: [Live Demo](https://sad-blackwell-54f876.netlify.app/) :star:
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps:
